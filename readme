@@ -1,0 +1,39 @@
+## Contract Functions
+
+### `getBalance()`
+
+- Returns the current balance of the contract.
+
+### `deposit(uint256 _amount)`
+
+- Allows the contract owner to deposit funds into the contract.
+- Parameters:
+  - `_amount` (uint256): The amount of funds to deposit.
+
+### `withdraw(uint256 _amount)`
+
+- Allows the contract owner to withdraw funds from the contract.
+- Parameters:
+  - `_amount` (uint256): The amount of funds to withdraw.
+
+### `burn(uint256 _amount)`
+
+- Allows any address to "burn" funds from the contract, reducing the contract's balance.
+- Parameters:
+  - `_amount` (uint256): The amount of funds to burn.
+
+### Events
+
+#### `Deposit(address indexed account, uint256 amount)`
+
+- Emitted when a deposit is made.
+- Parameters:
+  - `account` (address): The account that made the deposit.
+  - `amount` (uint256): The amount of funds deposited.
+
+#### `Withdraw(address indexed account, uint256 amount)`
+
+- Emitted when a withdrawal or burn occurs.
+- Parameters:
+  - `account` (address): The account from which funds were withdrawn or burned.
+  - `amount` (uint256): The amount of funds withdrawn or burned.
